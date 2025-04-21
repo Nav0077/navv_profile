@@ -134,6 +134,7 @@ export default function ResumePage() {
                   delay={0.4}
                 >
                   <ul className="list-disc pl-5 space-y-2 text-white/80">
+                  
                     <li>Assisted in the development of client websites using HTML, CSS, and JavaScript.</li>
                     <li>Implemented responsive designs based on provided mockups.</li>
                     <li>Collaborated with the design team to ensure pixel-perfect implementation.</li>
@@ -149,7 +150,7 @@ export default function ResumePage() {
                 <ExperienceItem
                   title="Master of Computer Science"
                   company="New York University"
-                  period="2014 - 2016"
+                  period="2030 - 2032"
                   location="New York, USA"
                   delay={0.6}
                 >
@@ -159,10 +160,10 @@ export default function ResumePage() {
                 </ExperienceItem>
 
                 <ExperienceItem
-                  title="Bachelor of Science in Computer Science"
-                  company="University of Illinois"
-                  period="2010 - 2014"
-                  location="Chicago, USA"
+                  title="Bachelor of Science in Computer Science and Information Technology"
+                  company="TU University"
+                  period="2024 - Running"
+                  location="Kathmandu, Nepal"
                   delay={0.7}
                 >
                   <p className="text-white/80">
