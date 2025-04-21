@@ -45,7 +45,7 @@ export default function ResumePage() {
           >
             <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
               <div className="w-32 h-32 rounded-full border-4 border-purple-500 overflow-hidden flex-shrink-0">
-                <img src="/placeholder.svg?height=128&width=128" alt="NAV" className="w-full h-full object-cover" />
+                <img src="/profile.jpg?height=128&width=128" alt="NAV" className="w-full h-full object-cover" />
               </div>
               <div className="text-center md:text-left">
                 <h1 className="text-4xl font-bold mb-2">

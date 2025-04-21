@@ -71,7 +71,7 @@ export default function Portfolio() {
             transition={{ duration: 0.7 }}
             className="w-40 h-40 rounded-full border-4 border-purple-500 overflow-hidden mb-8"
           >
-            <img src="/placeholder.svg?height=160&width=160" alt="NAV" className="w-full h-full object-cover" />
+            <img src="/profile.jpg?height=160&width=160" alt="NAV" className="w-full h-full object-cover" />
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -135,7 +135,7 @@ export default function Portfolio() {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg transform rotate-3"></div>
               <img
-                src="/placeholder.svg?height=400&width=500"
+                src="/xyz.jpg?height=400&width=500"
                 alt="About NAV"
                 className="relative rounded-lg w-full h-auto z-10"
               />
