@@ -53,7 +53,7 @@ export default function ResumePage() {
                     NAV
                   </span>
                 </h1>
-                <h2 className="text-xl mb-4">Senior Frontend Developer</h2>
+                <h2 className="text-xl mb-4">Senior Game Developer</h2>
                 <p className="text-white/80 max-w-2xl mb-6">
                   Passionate and creative frontend developer with 5+ years of experience building modern, responsive web
                   applications. Specialized in React, Next.js, and modern JavaScript frameworks with a strong focus on
@@ -62,15 +62,15 @@ export default function ResumePage() {
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                   <div className="flex items-center gap-2">
                     <Mail className="w-4 h-4 text-purple-400" />
-                    <span className="text-white/80">nav@example.com</span>
+                    <span className="text-white/80">basnetnavraj4@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4 text-purple-400" />
-                    <span className="text-white/80">+1 (123) 456-7890</span>
+                    <span className="text-white/80">+977 9864726814</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-purple-400" />
-                    <span className="text-white/80">New York, USA</span>
+                    <span className="text-white/80">Nepalgunj, Nepal</span>
                   </div>
                 </div>
               </div>
@@ -83,10 +83,10 @@ export default function ResumePage() {
             <ResumeSection title="Work Experience" delay={0.1}>
               <div className="space-y-8">
                 <ExperienceItem
-                  title="Senior Frontend Developer"
-                  company="TechCorp Inc."
+                  title="Senior Game Developer"
+                  company="AnyX Inc."
                   period="2021 - Present"
-                  location="New York, USA"
+                  location="Kathmandu, Nepal"
                   delay={0.2}
                 >
                   <ul className="list-disc pl-5 space-y-2 text-white/80">
@@ -187,10 +187,10 @@ export default function ResumePage() {
                 <SkillCategory title="Backend & Tools" delay={1.0}>
                   <SkillItem name="Node.js" level={80} />
                   <SkillItem name="RESTful APIs" level={85} />
-                  <SkillItem name="GraphQL" level={75} />
+                  <SkillItem name="Unity" level={85} />
                   <SkillItem name="Git/GitHub" level={90} />
                   <SkillItem name="Docker" level={70} />
-                  <SkillItem name="CI/CD" level={75} />
+                  <SkillItem name="Unreal Engine" level={85} />
                 </SkillCategory>
 
                 <SkillCategory title="Design & UI/UX" delay={1.1}>
@@ -224,19 +224,19 @@ export default function ResumePage() {
                   {
                     title: "Google Professional Web Developer",
                     issuer: "Google",
-                    date: "2021",
+                    date: "2031",
                     link: "#",
                   },
                   {
                     title: "React Advanced Certification",
                     issuer: "Meta",
-                    date: "2020",
+                    date: "2028",
                     link: "#",
                   },
                   {
-                    title: "Best Frontend Developer Award",
-                    issuer: "WebDev Conference",
-                    date: "2019",
+                    title: "Best Game Developer Award",
+                    issuer: "GameDev Conference",
+                    date: "2029",
                     link: "#",
                   },
                 ].map((cert, index) => (
@@ -300,6 +300,7 @@ export default function ResumePage() {
             <ResumeSection title="Languages" delay={1.8}>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {[
+                  { language: "Nepal", level: "Native", proficiency: 100 },
                   { language: "English", level: "Native", proficiency: 100 },
                   { language: "Spanish", level: "Fluent", proficiency: 85 },
                   { language: "French", level: "Intermediate", proficiency: 60 },

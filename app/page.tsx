@@ -160,19 +160,19 @@ export default function Portfolio() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h4 className="font-bold mb-2">Name:</h4>
-                  <p className="text-white/80">NAV</p>
+                  <p className="text-white/80">Nav Raj Basnet</p>
                 </div>
                 <div>
                   <h4 className="font-bold mb-2">Email:</h4>
-                  <p className="text-white/80">nav@example.com</p>
+                  <p className="text-white/80">basnetnavraj4@gmail.com</p>
                 </div>
                 <div>
                   <h4 className="font-bold mb-2">Location:</h4>
-                  <p className="text-white/80">New York, USA</p>
+                  <p className="text-white/80">Nepalgunj, Nepal</p>
                 </div>
                 <div>
                   <h4 className="font-bold mb-2">Availability:</h4>
-                  <p className="text-white/80">Freelance & Full-time</p>
+                  <p className="text-white/80"> Part Time Dev and Student</p>
                 </div>
               </div>
             </motion.div>
@@ -201,7 +201,7 @@ export default function Portfolio() {
                     image: "/placeholder.svg?height=300&width=400",
                   },
                   {
-                    title: "Travel App",
+                    title: "AnyX App",
                     category: "Mobile Development",
                     image: "/placeholder.svg?height=300&width=400",
                   },
@@ -253,11 +253,12 @@ export default function Portfolio() {
             >
               <h3 className="text-2xl font-bold mb-6">Technical Skills</h3>
               {[
-                { name: "HTML/CSS", percentage: 95 },
-                { name: "JavaScript", percentage: 90 },
-                { name: "React", percentage: 85 },
-                { name: "Node.js", percentage: 80 },
-                { name: "UI/UX Design", percentage: 75 },
+                { name: "HTML/CSS", percentage: 75 },
+                { name: "JavaScript", percentage: 40 },
+                { name: "React", percentage: 45 },
+                { name: "Node.js", percentage: 50 },
+                { name: "Unreal Engine", percentage: 40 },
+                { name: "Unity", percentage: 85 },
               ].map((skill, index) => (
                 <SkillBar key={index} skill={skill} index={index} />
               ))}
@@ -302,9 +303,9 @@ export default function Portfolio() {
               </p>
               <div className="space-y-6">
                 {[
-                  { icon: <Mail className="w-5 h-5" />, title: "Email", value: "nav@example.com" },
-                  { icon: <User className="w-5 h-5" />, title: "Phone", value: "+1 (123) 456-7890" },
-                  { icon: <Github className="w-5 h-5" />, title: "Github", value: "github.com/nav" },
+                  { icon: <Mail className="w-5 h-5" />, title: "Email", value: "basnetnavraj4@gmail.com" },
+                  { icon: <User className="w-5 h-5" />, title: "Phone", value: "+977 9864726814" },
+                  { icon: <Github className="w-5 h-5" />, title: "Github", value: "github.com/Nav0077" },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
