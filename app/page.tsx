@@ -4,7 +4,7 @@ import { useState } from "react"
 
 import { useEffect, useRef } from "react"
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
-import { ArrowDown, Code, ExternalLink, Github, Mail, User } from "lucide-react"
+import { ArrowDown, Code, ExternalLink, Github, InstagramIcon, Linkedin, LinkedinIcon, Mail, TwitchIcon, TwitterIcon, User, X } from "lucide-react"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
@@ -186,7 +186,7 @@ export default function Portfolio() {
           <SectionTitle>My Projects</SectionTitle>
           <Tabs defaultValue="all" className="w-full mb-10">
             <TabsList className="mx-auto bg-zinc-800/50">
-              {["All", "Web", "Mobile", "Design"].map((category) => (
+              {["All", "Web", "Mobile", "Games"].map((category) => (
                 <TabsTrigger key={category} value={category.toLowerCase()}>
                   {category}
                 </TabsTrigger>
@@ -195,21 +195,13 @@ export default function Portfolio() {
             <TabsContent value="all" className="mt-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  {
-                    title: "E-Commerce Platform",
-                    category: "Web Development",
-                    image: "/placeholder.svg?height=300&width=400",
-                  },
+                  
                   {
                     title: "AnyX App",
                     category: "Mobile Development",
                     image: "/placeholder.svg?height=300&width=400",
                   },
-                  {
-                    title: "Portfolio Design",
-                    category: "UI/UX Design",
-                    image: "/placeholder.svg?height=300&width=400",
-                  },
+                  
                   {
                     title: "Task Management",
                     category: "Web Development",
@@ -221,8 +213,24 @@ export default function Portfolio() {
                     image: "/placeholder.svg?height=300&width=400",
                   },
                   {
-                    title: "News Portal",
-                    category: "Web Development",
+                    title: "Car Portal",
+                    category: "Open World Game",
+                    image: "/placeholder.svg?height=300&width=400",
+                  },
+                  
+                ].map((project, index) => (
+                  <ProjectCard key={index} project={project} index={index} />
+                ))}
+              </div>
+            </TabsContent>
+
+            {/* This is The Game Section */}
+            <TabsContent value="games" className="mt-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {
+                    title: "Car Portal",
+                    category: "Open World Game",
                     image: "/placeholder.svg?height=300&width=400",
                   },
                 ].map((project, index) => (
@@ -230,6 +238,43 @@ export default function Portfolio() {
                 ))}
               </div>
             </TabsContent>
+
+            {/* Mobile projects would be filtered here */}
+            <TabsContent value="mobile" className="mt-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {
+                    title: "Fitness Tracker",
+                    category: "Mobile Development",
+                    image: "/placeholder.svg?height=300&width=400",
+                  },
+                  {
+                    title: "AnyX App",
+                    category: "Mobile Development",
+                    image: "/placeholder.svg?height=300&width=400",
+                  },
+                ].map((project, index) => (
+                  <ProjectCard key={index} project={project} index={index} />
+                ))}
+              </div>
+            </TabsContent>
+
+             {/* Web projects would be filtered here */}
+              <TabsContent value="web" className="mt-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                 {
+                  title: "Task Management",
+                  category: "Web Development",
+                  image: "/placeholder.svg?height=300&width=400",
+                },
+                ].map((project, index) => (
+                  <ProjectCard key={index} project={project} index={index} />
+                ))}
+              </div>
+            </TabsContent>
+
+
             {/* Other tabs would have filtered content */}
             <TabsContent value="web" className="mt-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -253,12 +298,12 @@ export default function Portfolio() {
             >
               <h3 className="text-2xl font-bold mb-6">Technical Skills</h3>
               {[
-                { name: "HTML/CSS", percentage: 75 },
-                { name: "JavaScript", percentage: 40 },
-                { name: "React", percentage: 45 },
-                { name: "Node.js", percentage: 50 },
-                { name: "Unreal Engine", percentage: 40 },
-                { name: "Unity", percentage: 85 },
+                { name: "HTML/CSS", percentage: 75, value: 75 },
+                { name: "JavaScript", percentage: 40, value: 40 },
+                { name: "React", percentage: 45, value: 45 },
+                { name: "Node.js", percentage: 50, value: 50 },
+                { name: "Unreal Engine", percentage: 40, value: 40 },
+                { name: "Unity", percentage: 85, value: 85 },
               ].map((skill, index) => (
                 <SkillBar key={index} skill={skill} index={index} />
               ))}
@@ -277,7 +322,11 @@ export default function Portfolio() {
                   { name: "Problem Solving", value: 95 },
                   { name: "Creativity", value: 80 },
                 ].map((skill, index) => (
-                  <CircularSkill key={index} skill={skill} index={index} />
+                  <CircularSkill
+                    key={index}
+                    skill={{ ...skill, percentage: skill.value }}
+                    index={index}
+                  />
                 ))}
               </div>
             </motion.div>
@@ -405,16 +454,25 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="flex justify-center space-x-6 mb-6"
           >
-            {["github", "twitter", "linkedin", "instagram"].map((social) => (
+            {[
+              { name: "github", href: "https://github.com/Nav0077", icon: <Github className="w-5 h-5" /> },
+              { name: "twitter", href: "https://x.com/Nav0777777", icon: <TwitterIcon className="w-5 h-5" /> },
+              { name: "linkedin", href: "https://www.linkedin.com/in/nav-b-9310b9312", icon: <LinkedinIcon className="w-5 h-5" /> },
+              { name: "instagram", href: "https://www.instagram.com/nav7777x", icon: <InstagramIcon className="w-5 h-5" /> },
+              { name: "own-logo", href: "/", icon: <img src="/profile.jpg" alt="Own Logo" className="w-5 h-5" /> },
+            ].map((social) => (
               <a
-                key={social}
-                href="#"
-                className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white/80 hover:bg-purple-500 hover:text-white transition-colors"
+              key={social.name}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white/80 hover:bg-purple-500 hover:text-white transition-colors"
               >
-                <span className="sr-only">{social}</span>
-                <Code className="w-5 h-5" />
+              <span className="sr-only">{social.name}</span>
+              {social.icon}
               </a>
             ))}
+              
           </motion.div>
           <motion.p
             initial={{ opacity: 0 }}
@@ -432,7 +490,7 @@ export default function Portfolio() {
 }
 
 // Helper Components
-function AnimatedSection({ id, children, className = "" }) {
+function AnimatedSection({ id, children, className = "" }: { id: string; children: ReactNode; className?: string }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
@@ -449,7 +507,9 @@ function AnimatedSection({ id, children, className = "" }) {
   )
 }
 
-function SectionTitle({ children }) {
+import { ReactNode } from "react";
+
+function SectionTitle({ children }: { children: ReactNode }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -472,7 +532,13 @@ function SectionTitle({ children }) {
   )
 }
 
-function ProjectCard({ project, index }) {
+interface Project {
+  title: string;
+  category: string;
+  image: string;
+}
+
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -505,7 +571,13 @@ function ProjectCard({ project, index }) {
   )
 }
 
-function SkillBar({ skill, index }) {
+interface Skill {
+  name: string;
+  percentage: number;
+  value: number; // Added the 'value' property
+}
+
+function SkillBar({ skill, index }: { skill: Skill; index: number }) {
   return (
     <div className="mb-6">
       <div className="flex justify-between mb-1">
@@ -525,7 +597,7 @@ function SkillBar({ skill, index }) {
   )
 }
 
-function CircularSkill({ skill, index }) {
+function CircularSkill({ skill, index }: { skill: Skill; index: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -569,7 +641,7 @@ function CircularSkill({ skill, index }) {
   )
 }
 
-function TypewriterEffect({ text, delay = 50 }) {
+function TypewriterEffect({ text, delay = 50 }: { text: string; delay?: number }) {
   const [displayText, setDisplayText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
 

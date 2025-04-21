@@ -354,7 +354,7 @@ export default function ResumePage() {
 }
 
 // Helper Components
-function ResumeSection({ title, children, delay = 0 }) {
+function ResumeSection({ title, children, delay = 0 }: { title: string; children: React.ReactNode; delay?: number }) {
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay }}>
       <h2 className="text-2xl font-bold mb-6 relative inline-block">
@@ -366,7 +366,7 @@ function ResumeSection({ title, children, delay = 0 }) {
   )
 }
 
-function ExperienceItem({ title, company, period, location, children, delay = 0 }) {
+function ExperienceItem({ title, company, period, location, children, delay = 0 }: { title: string; company: string; period: string; location: string; children: React.ReactNode; delay?: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -390,7 +390,7 @@ function ExperienceItem({ title, company, period, location, children, delay = 0 
   )
 }
 
-function SkillCategory({ title, children, delay = 0 }) {
+function SkillCategory({ title, children, delay = 0 }: { title: string; children: React.ReactNode; delay?: number }) {
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay }}>
       <h3 className="font-semibold mb-4 text-lg">{title}</h3>
@@ -399,7 +399,7 @@ function SkillCategory({ title, children, delay = 0 }) {
   )
 }
 
-function SkillItem({ name, level }) {
+function SkillItem({ name, level }: { name: string; level: number }) {
   return (
     <div>
       <div className="flex justify-between mb-1">
