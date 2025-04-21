@@ -90,7 +90,7 @@ export default function Portfolio() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl"
           >
-            <TypewriterEffect text="A passionate developer crafting beautiful digital experiences." delay={50} />
+            <TypewriterEffect text="A passionate Game Developer and Software Developer" delay={50} />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
