@@ -109,38 +109,7 @@ export default function ResumePage() {
                   </ul>
                 </ExperienceItem>
 
-                <ExperienceItem
-                  title="Frontend Developer"
-                  company="WebSolutions Ltd."
-                  period="2018 - 2021"
-                  location="Boston, USA"
-                  delay={0.3}
-                >
-                  <ul className="list-disc pl-5 space-y-2 text-white/80">
-                    <li>
-                      Developed and maintained multiple client websites using React, Vue.js, and vanilla JavaScript.
-                    </li>
-                    <li>Implemented responsive designs and ensured cross-browser compatibility for all projects.</li>
-                    <li>Integrated RESTful APIs and GraphQL endpoints with frontend applications.</li>
-                    <li>Participated in agile development processes, including daily stand-ups and sprint planning.</li>
-                  </ul>
-                </ExperienceItem>
-
-                <ExperienceItem
-                  title="Junior Web Developer"
-                  company="Digital Creations"
-                  period="2016 - 2018"
-                  location="Chicago, USA"
-                  delay={0.4}
-                >
-                  <ul className="list-disc pl-5 space-y-2 text-white/80">
-                  
-                    <li>Assisted in the development of client websites using HTML, CSS, and JavaScript.</li>
-                    <li>Implemented responsive designs based on provided mockups.</li>
-                    <li>Collaborated with the design team to ensure pixel-perfect implementation.</li>
-                    <li>Maintained and updated existing websites, fixing bugs and implementing new features.</li>
-                  </ul>
-                </ExperienceItem>
+              
               </div>
             </ResumeSection>
 
@@ -149,9 +118,9 @@ export default function ResumePage() {
               <div className="space-y-6">
                 <ExperienceItem
                   title="Master of Computer Science"
-                  company="New York University"
-                  period="2030 - 2032"
-                  location="New York, USA"
+                  company="N/A"
+                  period="N/A"
+                  location="N/A"
                   delay={0.6}
                 >
                   <p className="text-white/80">
@@ -222,18 +191,7 @@ export default function ResumePage() {
                     date: "2022",
                     link: "#",
                   },
-                  {
-                    title: "Google Professional Web Developer",
-                    issuer: "Google",
-                    date: "2031",
-                    link: "#",
-                  },
-                  {
-                    title: "React Advanced Certification",
-                    issuer: "Meta",
-                    date: "2028",
-                    link: "#",
-                  },
+            
                   {
                     title: "Best Game Developer Award",
                     issuer: "GameDev Conference",
