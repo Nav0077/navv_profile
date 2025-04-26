@@ -3,6 +3,7 @@
 import { useState } from "react"
 
 import { useEffect, useRef } from "react"
+<meta name="google-site-verification" content="0u85cpFgfqPGp7lHInuUxX4Q41XjG0kAOqT-OIE1PEk" />
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
 import { ArrowDown, Code, ExternalLink, Github, InstagramIcon, Linkedin, LinkedinIcon, Mail, TwitchIcon, TwitterIcon, User, X } from "lucide-react"
 import Link from "next/link"
