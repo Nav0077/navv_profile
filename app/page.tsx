@@ -98,7 +98,12 @@ export default function Portfolio() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="flex flex-wrap gap-4 justify-center"
           >
-            <Button className="bg-purple-600 hover:bg-purple-700">Get in Touch</Button>
+            <Link href="/contactsection">
+            <Button className="bg-purple-600 hover:bg-purple-700">
+              Get in Touch
+            </Button>
+            </Link>
+
             <Link href="/resume">
               <Button variant="outline" className="border-purple-500 text-white hover:bg-purple-500/20">
                 View Resume

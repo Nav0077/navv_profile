@@ -146,29 +146,21 @@ export default function ResumePage() {
             <ResumeSection title="Skills" delay={0.8}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <SkillCategory title="Frontend Development" delay={0.9}>
-                  <SkillItem name="HTML5/CSS3" level={95} />
-                  <SkillItem name="JavaScript (ES6+)" level={90} />
-                  <SkillItem name="React.js" level={95} />
-                  <SkillItem name="Next.js" level={90} />
-                  <SkillItem name="TypeScript" level={85} />
-                  <SkillItem name="Tailwind CSS" level={90} />
+                  <SkillItem name="HTML5/CSS3" level={55} />
+                  <SkillItem name="JavaScript (ES6+)" level={40} />
+                  <SkillItem name="React.js" level={35} />
+                  <SkillItem name="Next.js" level={20} />
+                  <SkillItem name="TypeScript" level={45} />
+                  <SkillItem name="Tailwind CSS" level={10} />
                 </SkillCategory>
 
                 <SkillCategory title="Backend & Tools" delay={1.0}>
-                  <SkillItem name="Node.js" level={80} />
-                  <SkillItem name="RESTful APIs" level={85} />
+                  <SkillItem name="Node.js" level={30} />
+                  <SkillItem name="RESTful APIs" level={35} />
                   <SkillItem name="Unity" level={85} />
-                  <SkillItem name="Git/GitHub" level={90} />
-                  <SkillItem name="Docker" level={70} />
-                  <SkillItem name="Unreal Engine" level={85} />
-                </SkillCategory>
-
-                <SkillCategory title="Design & UI/UX" delay={1.1}>
-                  <SkillItem name="Figma" level={85} />
-                  <SkillItem name="Adobe XD" level={80} />
-                  <SkillItem name="Responsive Design" level={95} />
-                  <SkillItem name="UI/UX Principles" level={85} />
-                  <SkillItem name="Accessibility (WCAG)" level={80} />
+                  <SkillItem name="Git/GitHub" level={70} />
+                  <SkillItem name="Docker" level={20} />
+                  <SkillItem name="Unreal Engine" level={55} />
                 </SkillCategory>
 
                 <SkillCategory title="Soft Skills" delay={1.2}>
