@@ -582,10 +582,10 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <h3 className="text-xl font-bold">{project.title}</h3>
         <p className="text-white/80 mb-4">{project.category}</p>
         <div className="flex gap-3">
-          <Button size="sm" variant="outline" className="border-white/20 hover:border-white">
+          <Button size="sm" variant="outline" className="border-black/20 hover:border-red">
             <Github className="w-4 h-4 mr-2" /> Code
           </Button>
-          <Button size="sm" variant="outline" className="border-white/20 hover:border-white">
+          <Button size="sm" variant="outline" className="border-white/20 hover:border-pink">
             <ExternalLink className="w-4 h-4 mr-2" /> Demo
           </Button>
         </div>
