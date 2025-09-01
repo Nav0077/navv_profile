@@ -287,6 +287,12 @@ export default function Portfolio() {
                 {/* Web projects would be filtered here */}
               </div>
             </TabsContent>
+
+            <TabsContent value="desktop" className="mt-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Desktop projects would be filtered here */}
+              </div>
+            </TabsContent>
           </Tabs>
         </div>
       </AnimatedSection>
