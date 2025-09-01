@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 
+
+
 import { useEffect, useRef } from "react"
 
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
@@ -291,6 +293,15 @@ export default function Portfolio() {
             <TabsContent value="desktop" className="mt-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Desktop projects would be filtered here */}
+                {[
+                  {
+                    title: "CalcX",
+                    category: "Desktop Development",
+                    image: "/calcx_image.png?height=300&width=400",
+                  },
+                ].map((project, index) => (
+                  <ProjectCard key={index} project={project} index={index} />
+                ))}
               </div>
             </TabsContent>
           </Tabs>
