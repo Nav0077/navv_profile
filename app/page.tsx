@@ -297,7 +297,7 @@ export default function Portfolio() {
                   {
                     title: "CalcX",
                     category: "Desktop Development",
-                    image: "/calcx_image.png?height=300&width=400",
+                    image: "/calcx_image.png?height=250&width=350",
                   },
                 ].map((project, index) => (
                   <ProjectCard key={index} project={project} index={index} />
