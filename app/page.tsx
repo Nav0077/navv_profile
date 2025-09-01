@@ -578,18 +578,29 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-        <h3 className="text-xl font-bold">{project.title}</h3>
-        <p className="text-white/80 mb-4">{project.category}</p>
-        <div className="flex gap-3">
-          <Button size="sm" variant="outline" className="border-black/20 hover:border-red">
-            <Github className="w-4 h-4 mr-2" /> Code
-          </Button>
-          <Button size="sm" variant="outline" className="border-white/20 hover:border-pink">
-            <ExternalLink className="w-4 h-4 mr-2" /> Demo
-          </Button>
-        </div>
-      </div>
+    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 rounded-2xl">
+  <h3 className="text-2xl font-semibold text-white drop-shadow-md">{project.title}</h3>
+  <p className="text-gray-300 mb-4">{project.category}</p>
+  
+  <div className="flex gap-3">
+    <Button
+      size="sm"
+      variant="outline"
+      className="flex items-center gap-2 rounded-xl border-white/30 bg-white/10 backdrop-blur-md text-white hover:bg-white/20 hover:scale-105 transition-transform duration-300"
+    >
+      <Github className="w-4 h-4" /> Code
+    </Button>
+
+    <Button
+      size="sm"
+      variant="outline"
+      className="flex items-center gap-2 rounded-xl border-pink-400/40 bg-pink-500/10 backdrop-blur-md text-white hover:bg-pink-500/20 hover:scale-105 transition-transform duration-300"
+    >
+      <ExternalLink className="w-4 h-4" /> Demo
+    </Button>
+  </div>
+</div>
+
     </motion.div>
   )
 }
