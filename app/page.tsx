@@ -192,7 +192,7 @@ export default function Portfolio() {
           <SectionTitle>My Projects</SectionTitle>
           <Tabs defaultValue="all" className="w-full mb-10">
             <TabsList className="mx-auto bg-zinc-800/50">
-              {["All", "Web", "Mobile", "Games"].map((category) => (
+              {["All", "Web", "Mobile", "Desktop", "Games"].map((category) => (
                 <TabsTrigger key={category} value={category.toLowerCase()}>
                   {category}
                 </TabsTrigger>
